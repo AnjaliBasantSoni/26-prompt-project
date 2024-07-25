@@ -1,0 +1,417 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: #162c22;
+}
+#center{
+    width: 87%;
+    height: 90%;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 110px;
+    overflow: hidden;
+    background:linear-gradient(to left top, #1a4130,#155035);
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    /*background-color: #618c78;*/
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    font-family: Shaloems;
+    justify-content: space-between;
+    padding: 10px 80px;
+}
+.nav1{
+    width: 10%;
+    height: 100%;
+    /*background-color: royalblue;*/
+    padding: 10px;
+}  
+.nav1 h1{
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+.nav1 h1:hover{
+    color: orangered;
+    height: 150%;
+}
+.nav2{
+    width: 30%;
+    height: 100%;
+   /* background-color: royalblue;*/
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav2 h4{
+    font-family: sans-serif;
+    color:  whitesmoke;
+    font-size: 18px;
+    display: flex;
+    position: relative;
+} 
+.nav2 h4:hover{
+    color: #dbc785;
+}
+.nav2 h4::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: #dbc785 ;
+    top: 110%;
+    left: 10%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.nav2 h4:hover::after{
+    width: 70%;
+}
+.nav3{
+    width: 8%;
+    height: 100%;
+    /*background-color: royalblue;*/
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav3 i{
+    font-size: 22px;
+    color: #fff;
+    opacity: 20;
+}
+.nav3 i:hover{
+    color: orangered;
+}
+.nav3 button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    background-color: #162c22;
+}
+.card1{
+    width: 25%;
+    height: 63%;
+    background-color: #dbc785;
+    margin-top: 190px;
+    margin-left: -150px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 250px 250px 0px 0px;
+    animation-name: anju;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.card1 img{
+    position: relative;
+    background-position: center;
+    background-size:cover ;
+}
+.card2{
+    width: 25%;
+    height: 63%;
+   /* background-color: #dbc785;*/
+    margin-top: 190px;
+    margin-left: 550px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 250px 250px 0px 0px;
+    z-index: 2;
+    animation-name: anju;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.card2 img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size:cover ;  
+}
+.card4 h1{
+    z-index: 5;
+    position: absolute;
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+.card4{
+    width: 23%;
+    height: 55%;
+    /*background-color: red;*/
+    margin-top: 190px;
+    margin-left: 620px;
+    position: absolute;
+    border-top: 2px solid #dbc785;
+    border-left: 2px solid #dbc785;
+    border-bottom: 2px solid #dbc785;
+    border-radius: 250px 250px 0px 0px;
+}
+.card4 #box1{
+    width: 75%;
+    height: 50%;
+    background-color:  #162c22;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 350px;
+    z-index: 5;
+    opacity: 0.5;
+    color: #fff;
+}
+#boxb{
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    /*background-color: #e9debc;*/
+    display: flex;
+    align-items: center;
+    margin-left: 1050px;
+    margin-top: 350px;
+}
+#boxb i{
+   font-size: 50px;
+   color: #dbc785;
+}
+#boxc{
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    /*background-color: #8a6e19;*/
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 550px;
+}
+#boxc i{
+   font-size: 50px;
+   color: #dbc785;
+}
+/* #store{
+    width: 6%;
+    height: 10%;
+    position: absolute;
+   background-color: #e9debc;
+    margin-left: 350px;
+    margin-top: 220px;
+}
+#store img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    opacity: 0.7;
+}
+#rotate{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #e9debc;
+    margin-top: 620px;
+    margin-left: 240px;
+    animation-name: anime;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: inherit;
+} 
+#rotate img{
+    width: 100%;
+    margin-top: -11%;
+    margin-left: -20%;
+    height: 140%;
+} */
+@keyframes anime {
+    0%{
+     transform: scaleX(0);
+    }
+    100%{
+     transform:scaleX(100%);
+    }
+}
+.card4 #box1 h3{
+    position: relative;
+    padding-top: 10px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    z-index: 5;
+}
+.card4 #box1 h5{
+    position: relative;
+    padding-top: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-left: 15px;
+    z-index: 5;
+}
+.card4 #box1 #green{
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+    z-index: 5;
+    background-color: green;
+}
+.card4 #box1 #green-prt1{
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -23px;
+    margin-left: 10px;
+    z-index: 5;
+    border: 2px solid green;
+}
+.card4 #box1 #red{
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -17px;
+    margin-left: 60px;
+    z-index: 5;
+    background-color: red;
+}
+.card4 #box1 #white{
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -17px;
+    margin-left: 105px;
+    z-index: 5;
+    background-color: white;
+}
+.card4 #box1 button{
+    width: 40%;
+    height: 18%;
+    position: relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    z-index: 5;
+}
+.card4 #box1 button h3{
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    display: flex;
+    margin-top: -10px;
+    align-items: center;
+}
+.card4 #box1 #button2{
+    width: 40%;
+    height: 18%;
+    position: relative;
+    margin-top: -37px;
+    margin-left: 23px;
+    /*background-color: #dbc785;*/
+    border: 2px solid whitesmoke;
+}
+.card3{
+    width: 25%;
+    height: 63%;
+    background-color: #dbc785;
+    margin-top: 190px;
+    margin-left: 1240px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 250px 250px 0px 0px;
+    animation-name: anju;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: inherit;
+}
+.card3 img{
+    position: relative;
+    background-position: center;
+    background-size:cover ;
+
+}
+@keyframes anju {
+    0%{
+      transform: scaleX(0);
+    }
+    100%{
+      transform: scaleX(100%);
+    }
+}
+#boxa{
+    width: 15%;
+    height: 12%;
+    position: absolute;
+    margin-left: 1030px;
+    margin-top: 180px;
+    opacity: 0.5;
+   /* background-color:#162c22 ;*/
+}
+#boxa-prt1{
+    width: 45px;
+    height: 90px;
+    position: absolute;
+    margin-top: -65px;
+    border-radius: 50px;
+    background-color: #162c22;
+    opacity: 0.5;
+}
+#boxa h3{
+    margin-left: 22px;
+    position: relative;
+    z-index: 5;
+    color: #e9debc;
+    font-family: sans-serif;
+}
+#boxa h2{
+    margin-left: 22px;
+    position: relative;
+    color: #e9debc;
+    font-family: sans-serif;
+    z-index: 5;
+}
+#text {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    margin-top: 830px;
+    -webkit-text-stroke: 2px black;
+    -webkit-background-clip: text;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+
+}
+#text::-webkit-scrollbar{
+    display: none;
+}
+#text h3{
+    font-size: 40px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    margin-top: -5%;
+}
+@keyframes move {
+    0%{
+     transform: translateX(0);
+    }
+    100%{
+     transform: translateX(-100%);
+    }
+}
